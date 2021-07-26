@@ -5,9 +5,9 @@ USE employee_tracker_db;
 
 -- Creating database tables. --
 CREATE TABLE department(
- id INTEGER AUTO_INCREMENT,
- name VARCHAR(30),
- PRIMARY KEY(id)
+    id INTEGER AUTO_INCREMENT,
+    name VARCHAR(30),
+    PRIMARY KEY(id)
 );
 
 CREATE TABLE role(
