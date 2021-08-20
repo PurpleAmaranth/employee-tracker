@@ -3,11 +3,11 @@
 
 ## Description
 
-This app is practice on making viewing and interacting with information stored in databases easier. the concept is an interface known as **C**ontent **M**anagement **S**ystems. This build resembles a solution for managing a company's employees using node, inquirer, and MySQL.
+This app is practice on making, viewing, and interacting with information stored in databases easier using a text-based interface. The concept known as a **C**ontent **M**anagement **S**ystems interface. This build resembles a solution for managing a company's employees using node, inquirer, and MySQL.
 
 ## Concept
 
-The database design follow this schema containing three tables:
+The database design follows this schema containing three tables:
 
 ![Database Schema](assets/schema.png)
 
