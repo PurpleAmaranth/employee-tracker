@@ -9,7 +9,7 @@ This app is practice on making, viewing, and interacting with information stored
 
 The database design follows this schema containing three tables:
 
-![Database Schema](assets/schema.png)
+![Database Schema](assets/images/schema.png)
 
 * **department**:
 
@@ -59,7 +59,7 @@ So that I can organize and plan my business
 
 ## Mock-Up
 
-![Employee Tracker](assets/employee-tracker.gif)
+![Employee Tracker](assets/images/employee-tracker.gif)
 
 ## Walkthrough Video
 
