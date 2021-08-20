@@ -8,7 +8,9 @@ class DB {
 
     // Create methods for all objects
     createRole() {
-
+        return this.connection.query(
+            "Insert new role?", role
+            );
     }
 
     createDepartment() {
