@@ -19,19 +19,6 @@ class DB {
 
     }
 
-    // Remove methods for all objects
-    removeRole() {
-
-    }
-
-    removeDepartment() {
-
-    }
-
-    removeEmployee() {
-
-    }
-
     // Find methods for all objects
     findRoles() {
 
@@ -50,7 +37,9 @@ class DB {
     }
 
     findEmployees() {
-
+        return this.connection.query(
+            ""
+        );
     }
 
     findManagers() {
@@ -66,6 +55,18 @@ class DB {
 
     }
 
+     // Remove methods for all objects
+     removeRole() {
+
+    }
+
+    removeDepartment() {
+
+    }
+
+    removeEmployee() {
+
+    }
 }
 
 module.exports = new DB(connection);
