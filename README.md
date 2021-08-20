@@ -33,12 +33,14 @@ The database design follows this schema containing three tables:
 
 ## Instructions
 
+Run the program using "node app.js" or "npm run start"
+
+Use the arrow keys to navigate the command-line application.
+
 Use the command-line application to:
 
   * Add departments, roles, employees
-
   * View departments, roles, employees
-
   * Update employee roles
 
 ## User Story
@@ -57,7 +59,7 @@ So that I can organize and plan my business
 
 * Uses [console.table](https://www.npmjs.com/package/console.table) to print MySQL rows to the console. There is a built-in version of `console.table`, but the NPM package formats the data a little better.
 
-## Mock-Up
+## Example Mock-Up
 
 ![Employee Tracker](assets/images/employee-tracker.gif)
 
