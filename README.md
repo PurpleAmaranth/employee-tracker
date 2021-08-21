@@ -64,5 +64,5 @@ So that I can organize and plan my business
 ![Employee Tracker](assets/images/employee-tracker.gif)
 
 ## Walkthrough Video
-[![Employee Trakcert]]({https://github.com/PurpleAmaranth/employee-tracker/blob/main/assets/videos/employee-tracker.mp4} "employee-tracker")
 
+https://user-images.githubusercontent.com/36141949/130312187-7bd6c9ba-8a25-4b5e-a7da-648c540dd66f.mp4
