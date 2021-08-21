@@ -69,7 +69,7 @@ VALUES
     ('Helen', 'Keller', 10, NULL),
     ('Armin', 'Souvaneeeechez', 9, 9);
     
-
+-- For later use. --
 SELECT * FROM department;
 SELECT * FROM role;
 SELECT * FROM employee;
