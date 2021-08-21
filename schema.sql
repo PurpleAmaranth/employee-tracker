@@ -11,7 +11,7 @@ CREATE TABLE department (
 );
 
 CREATE TABLE role (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) UNIQUE NOT NULL,
   salary DECIMAL(20,2) NOT NULL,
   department_id INT UNSIGNED NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE role (
 );
 
 CREATE TABLE employee (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
   last_name VARCHAR(30) NOT NULL,
   role_id INT UNSIGNED NOT NULL,
@@ -54,19 +54,21 @@ VALUES
     ('Sales Specialist', 55000, 4),
     ('Sales Manager', 75000, 4);
 
+-- Manager must be defined first in sequence before being referenced. --
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES
-    ('Carlos', 'Rodgriguez', 1, NULL),
-    ('Rudy', 'Just Rudy', 2, Null),
-    ('Emily', 'Berger', 3, 1),
-    ('Mr.', 'Tims', 4, Null),
-    ('Spider', 'Man', 5, Null),
-    ('Melissa', 'Jergins', 6, 2),
-    ('Pam', 'Poovey', 7, Null),
-    ('Sun', 'Baby', 8, 3),
-    ('Armin', 'Souvaneeeechez', 9, NULL),
-    ('Helen', 'Keller', 10, 4);
+	('Emily', 'Berger', 3, NULL),
+    ('Carlos', 'Rodgriguez', 1, 1),
+    ('Rudy', 'Just Rudy', 2, 1),
+	('Melissa', 'Jergins', 6, NULL),
+    ('Mister', 'Tims', 4, 4),
+    ('Spider', 'Man', 5, 4),
+    ('Sun', 'Baby', 8, NULL),
+    ('Pam', 'Poovey', 7, 7),
+    ('Helen', 'Keller', 10, NULL),
+    ('Armin', 'Souvaneeeechez', 9, 9);
+    
 
 SELECT * FROM department;
 SELECT * FROM role;
