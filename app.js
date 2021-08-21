@@ -1,23 +1,21 @@
 // Define app dependencies
-const inquirer = require("inquirer");
-const mysql = require("mysql");
+const inquirer = require('inquirer');
+const mysql = require('mysql');
+const util = require('util');
 const cTable = require("console.table");
 
 const connection = mysql.createConnection({
     host: "localhost",
-    port: 3306,
     user: "root",
+    // No password set
     password: "",
     database: "employee_tracker_db"
-  });
-
-// Establish connection with unique id
-connection.connect(function(err) {
-    if (err) throw err
-    console.log("Connected as Id" + connection.threadId)
-    selectRole();
-    startPrompt();
 });
+
+// Establish connection using promisify
+connection.connect();
+
+connection.query = util.promisify(connection.query);
 
 // Set-up program prompts
 function startPrompt() {
